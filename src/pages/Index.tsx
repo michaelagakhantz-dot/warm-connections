@@ -272,14 +272,14 @@ const AgeDonut = () => (
           </div>
         </div>
       </div>
-      <ul className="flex-1 min-w-0 space-y-1.5 text-xs">
+      <ul className="flex-1 min-w-0 space-y-1.5 text-[11px]">
         {ageData.map((d) => (
-          <li key={d.name} className="flex items-center justify-between gap-2">
-            <span className="flex items-center gap-2 min-w-0">
+          <li key={d.name} className="flex items-center justify-between gap-2 whitespace-nowrap">
+            <span className="flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full shrink-0" style={{ background: d.fill }} />
-              <span className="text-muted-foreground truncate">{d.name}</span>
+              <span className="text-muted-foreground">{d.name}</span>
             </span>
-            <span className="font-mono text-foreground shrink-0">{d.value}%</span>
+            <span className="font-mono text-foreground">{d.value}%</span>
           </li>
         ))}
       </ul>
