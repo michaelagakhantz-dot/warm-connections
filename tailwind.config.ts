@@ -13,7 +13,25 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['Space Grotesk', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-violet': 'var(--gradient-violet)',
+        'gradient-card': 'var(--gradient-card)',
+      },
       colors: {
+        'card-elevated': 'hsl(var(--card-elevated))',
+        'primary-glow': 'hsl(var(--primary-glow))',
+        chart: {
+          1: 'hsl(var(--chart-1))',
+          2: 'hsl(var(--chart-2))',
+          3: 'hsl(var(--chart-3))',
+          4: 'hsl(var(--chart-4))',
+          5: 'hsl(var(--chart-5))',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
