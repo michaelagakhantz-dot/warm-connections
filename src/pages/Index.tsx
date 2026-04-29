@@ -352,7 +352,7 @@ const TotalSale = ({ delay = 0 }: { delay?: number }) => {
         </motion.button>
       </div>
 
-      <div className="flex-1 min-h-[220px] mt-5 -mx-2">
+      <div className="h-[260px] mt-5 -mx-2">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={salesData} barSize={28} onMouseMove={(s: any) => setHover(s?.activeTooltipIndex ?? null)} onMouseLeave={() => setHover(null)}>
             <defs>
@@ -530,7 +530,7 @@ const RevenueTrend = ({ delay = 0 }: { delay?: number }) => {
         ))}
       </div>
 
-      <div className="flex-1 min-h-[240px] mt-4 relative">
+      <div className="h-[280px] mt-4 relative">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={revenueData} margin={{ top: 12, right: 12, left: 0, bottom: 0 }}>
             <defs>
