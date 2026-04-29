@@ -272,14 +272,14 @@ const AgeDonut = () => (
           </div>
         </div>
       </div>
-      <ul className="flex-1 space-y-1.5 text-xs">
+      <ul className="flex-1 min-w-0 space-y-1.5 text-xs">
         {ageData.map((d) => (
-          <li key={d.name} className="flex items-center justify-between">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full" style={{ background: d.fill }} />
-              <span className="text-muted-foreground">{d.name}</span>
+          <li key={d.name} className="flex items-center justify-between gap-2">
+            <span className="flex items-center gap-2 min-w-0">
+              <span className="w-2 h-2 rounded-full shrink-0" style={{ background: d.fill }} />
+              <span className="text-muted-foreground truncate">{d.name}</span>
             </span>
-            <span className="font-mono text-foreground">{d.value}%</span>
+            <span className="font-mono text-foreground shrink-0">{d.value}%</span>
           </li>
         ))}
       </ul>
@@ -401,7 +401,7 @@ const Index = () => {
         <TopBar />
 
         {/* KPI row */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 mb-5">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-5">
           <KpiCard icon={Wallet} label="Revenue" value="$284.2K" delta="12.4%" positive spark={sparkA} color="hsl(252 95% 68%)" />
           <KpiCard icon={Users} label="Customers" value="9,481" delta="3.1%" positive spark={sparkC} color="hsl(190 90% 60%)" />
           <KpiCard icon={ShoppingBag} label="Avg. Order" value="$128.40" delta="2.8%" positive={false} spark={sparkB} color="hsl(320 85% 70%)" />
