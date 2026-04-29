@@ -257,18 +257,18 @@ const AgeDonut = () => (
       <p className="text-[11px] font-mono uppercase tracking-[0.18em] text-muted-foreground">Age groups</p>
       <span className="text-[10px] font-mono text-muted-foreground">100%</span>
     </div>
-    <div className="flex items-center gap-4">
-      <div className="w-28 h-28 shrink-0 relative">
+    <div className="flex items-center gap-3">
+      <div className="w-24 h-24 shrink-0 relative">
         <ResponsiveContainer>
           <PieChart>
-            <Pie data={ageData} dataKey="value" innerRadius={32} outerRadius={52}
+            <Pie data={ageData} dataKey="value" innerRadius={28} outerRadius={46}
               paddingAngle={4} stroke="none" cornerRadius={4} />
           </PieChart>
         </ResponsiveContainer>
         <div className="absolute inset-0 grid place-items-center pointer-events-none">
           <div className="text-center">
-            <p className="text-[10px] font-mono text-muted-foreground leading-none">Total</p>
-            <p className="text-base font-display font-semibold leading-tight">12.4k</p>
+            <p className="text-[9px] font-mono text-muted-foreground leading-none">Total</p>
+            <p className="text-sm font-display font-semibold leading-tight">12.4k</p>
           </div>
         </div>
       </div>
