@@ -89,7 +89,7 @@ const TopBar = () => (
 );
 
 const AIAssistant = () => (
-  <section className="glass-card p-8 flex flex-col row-span-2 relative overflow-hidden">
+  <section className="glass-card p-8 flex flex-col h-full relative overflow-hidden">
     <div className="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
     <h2 className="text-2xl font-display font-semibold relative z-10">AI Assistant</h2>
 
